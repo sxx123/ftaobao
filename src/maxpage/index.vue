@@ -14,7 +14,7 @@
         components:{
           index_top,
           tab_list
-        }
+        },
     }
 </script>
 
