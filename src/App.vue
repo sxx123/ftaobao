@@ -26,6 +26,7 @@ body, h1, h2, h3, h4, h5, h6, ol, ul, dl, dd, p, input, select, textarea, td {
 }
 html,body{
   height:100%;
+  background-color: #f4f4f4;
 }
 html{
   font-size: 26.67vw;	}

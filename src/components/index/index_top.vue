@@ -1,57 +1,52 @@
 <template>
     <div class="header">
-      <swiper ref="mySwiper" :options="swiperOptions">
-        <swiper-slide>
-          <img src="http://gw.alicdn.com/imgextra/i2/1277853/O1CN018tjaod27sitRWj1Mo_!!1277853-0-lubanu.jpg" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="http://img.alicdn.com/imgextra/i3/35/O1CN01B42PSj1C84S2jyUYm_!!35-0-luban.jpg" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="http://gw.alicdn.com/imgextra/i2/138/O1CN01pYoWiJ1CtFFMPZIcw_!!138-0-lubanu.jpg" alt="">
-        </swiper-slide>
-        <div class="swiper-pagination" slot="pagination"></div>
-      </swiper>
+        <img src="http://gw.alicdn.com/bao/uploaded/TB1FjNySpXXXXc8aXXXXXXXXXXX-200-200.png" alt="">
+        <a href="javrscript">
+          <img src="../../../static/image/search.png" alt="">
+          寻找宝贝店铺
+        </a>
     </div>
 </template>
 
 <script>
-    import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
-    import 'swiper/css/swiper.css'
     export default {
-        name: "index_top",
-        components:{
-          Swiper,
-          SwiperSlide
-        },
-      data(){
-          return{
-            swiperOptions:{
-              autoplay:true,
-              slidesPerView: 'auto',
-              centeredSlides:true,
-              spaceBetween: 10,
-              loop:true,
-              speed:600, //config参数同swiper4,与官网一致
-            }
-          }
-      },
+        name: "index_top"
     }
 </script>
 
 <style scoped>
-  .swiper-container{
+  .header{
     width: 100%;
-    height: 1.5rem;
-    border-radius:25px ;
-    margin-top: 10px;
+    height: .37rem;
+    background: rgb(255, 133, 42);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 100;
   }
-  .swiper-slide{
-    width: 100%;
-    height: 1.5rem;
+  .header img{
+    width: .3rem;
+    height: 0.25rem;
+    margin-left: 10px;
   }
-  .swiper-slide img{
-    width: 100%;
-    height: 100%;
+  .header a{
+    width: 3.2rem;
+    height: 0.25rem;
+    border-radius: 4px;
+    margin-left: 4px;
+    background: rgb(255, 78, 34);
+    font-size: 13px;
+    color: rgb(240, 224, 220);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+  .header a img{
+    width: 0.2rem;
+    height: 0.2rem;
+    margin-right: 5px;
   }
 </style>
